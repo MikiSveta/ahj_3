@@ -1,13 +1,7 @@
-// TODO: write code here
+import GamePlay from "./gamePlay";
+import StartGame from "./startGame";
 
-const goblin = document.getElementsByClassName('goblin');
+const gamePlay = new GamePlay();
+const newGame = new StartGame(gamePlay);
 
-const random = () => {
-  const randomGoblin = Math.floor(Math.random() * goblin.length);
-  if (document.querySelector('.goblin_active')) {
-    document.querySelector('.goblin_active').classList.remove('goblin_active');
-  }
-  goblin[randomGoblin].classList.add('goblin_active');
-};
-
-setInterval(random, 1000);
+newGame.start();

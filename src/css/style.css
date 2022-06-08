@@ -15,6 +15,7 @@ body {
     margin: 0 15px 30px;
     background: gray;
     border-radius: 50%;
+    cursor: url(https://ru.depositphotos.com/199036796/stock-illustration-thumb-finger-up-composition-of.html);
 }
 
   .goblin_active {
@@ -24,6 +25,10 @@ body {
     background-size: contain;
     background-color: brown;
 }
+
+.status {
+    margin-bottom: 20px;
+  }
 
 
 
